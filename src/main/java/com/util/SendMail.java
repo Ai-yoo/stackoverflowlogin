@@ -13,7 +13,7 @@ import java.util.Properties;
 
 public class SendMail {
     @Test
-    public void sendMail (){
+    public static void sendMail (){
 
         Properties props = new Properties();
         // 开启debug调试
