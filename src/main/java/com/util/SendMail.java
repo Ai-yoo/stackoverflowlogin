@@ -49,7 +49,7 @@ public class SendMail {
             msg.setFrom(new InternetAddress("18846054508@163.com"));
 
             transport = session.getTransport();
-            transport.connect("smtp.163.com", "18846054508@163.com", "350058841250dsb");
+            transport.connect("smtp.163.com", "18846054508@163.com", "邮箱授权码");
 
             transport.sendMessage(msg, new Address[] { new InternetAddress("1958321982@qq.com") });
         } catch (GeneralSecurityException e) {
