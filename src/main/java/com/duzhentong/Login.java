@@ -40,7 +40,7 @@ public class Login {
         }
         finally {
             if (statusCode != 200 && statusCode != 302) {
-//                SendMail.sendMail();
+                SendMail.sendMail();
             }
         }
         System.out.println(statusCode);
