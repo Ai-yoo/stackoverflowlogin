@@ -41,7 +41,7 @@ echo "$(date +%Y-%m-%d_%H:%M:%S) runned!" >> /usr/local/stack/log.log
 ## 程序运行出错处理：
 **通过程序执行返回的状态码判断是否执行成功**
 - 200：执行成功
-- 302：执行成功，网址被重定向  
+- 302：执行成功，网址被重定向，需要执行一次跳转
 
 判断除了上面的状态码，其余代表程序执行出错，并通过JavaMail向指定邮箱发送错误报告，详见：[SendMail.java](https://github.com/Ai-yoo/stackoverflowlogin/blob/master/src/main/java/com/util/SendMail.java)
 ### 邮件内容：
