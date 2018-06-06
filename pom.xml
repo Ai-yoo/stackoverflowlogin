@@ -125,20 +125,9 @@
             </execution>
           </executions>
         </plugin>
-        <plugin>
-          <artifactId>maven-source-plugin</artifactId>
-          <configuration>
-            <attach>true</attach>
-          </configuration>
-          <executions>
-            <execution>
-              <phase>compile</phase>
-              <goals>
-                <goal>jar</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
+        <!--
+        最后使用mvn assembly:assembly命令打包
+        -->
       </plugins>
     </pluginManagement>
   </build>
