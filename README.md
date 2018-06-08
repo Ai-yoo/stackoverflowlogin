@@ -44,6 +44,9 @@ echo "$(date +%Y-%m-%d_%H:%M:%S) runned!" >> /usr/local/stack/log.log
 - 302：执行成功，网址被重定向，需要执行一次跳转
 
 判断除了上面的状态码，其余代表程序执行出错，并通过JavaMail向指定邮箱发送错误报告，详见：[SendMail.java](https://github.com/Ai-yoo/stackoverflowlogin/blob/master/src/main/java/com/util/SendMail.java)
+
+
+
 ### 邮件内容：
 
 <html lang="en">
@@ -55,6 +58,6 @@ echo "$(date +%Y-%m-%d_%H:%M:%S) runned!" >> /usr/local/stack/log.log
   <meta name="Description" content="">
  </head>
  <body bgcolor="gray">
-  大哥！！！出错了！！！登不上了！！！<br><br><font style="font-weight:bold;" size="9">别玩了！！！</font>
+  糟糕！！！程序出错了！！！登不上了！！！<br><br><font style="font-weight:bold;" size="7">别玩了！！！</font>
  </body>
 </html>
